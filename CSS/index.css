@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.grid-index {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "banner"
+        "carrusel"
+        "productos-index"
+        "suscripcion-index"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+section {
+    background-color: #fffffa;
+}
+
+.masvendidos__productos {
+    margin: 50px;   
+}
+
+footer {
+    background-color: #343f37;
+    opacity: 70%;
+    color: white;
+    text-decoration: none;
+    grid-area: footer;
+    height: auto;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-footer {
+    width: 172px;
+}
+
+.footer__informacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.footer__informacion h3 {
+    font-size: 20px;
+}
+
+.footer__info {
+    text-align: center;
+}
+
+.footer__informacion .footer__lista li{
+    padding: 3px;
+}
+
+.footer__informacion2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__politica {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.suscripcion {
+    padding: 60px;
+}
+
+header {
+    height: auto;
+    background-color: #f8f5f2;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: header;
+}
+
+.logo {
+    width: 172px;
+    margin: 0px 40px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #BCAA94;
+    padding: 16px;
+}
+
+.banner {
+    opacity: 80%;
+    height: auto;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    grid-area: banner;
+}
+
+.banner__imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.banner__descuento {
+    display: inline-block;
+    position: absolute;
+    top: 80px; left: 80px;
+    height: 210px;
+    width: 410px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 80px;
+    color: #ffffff;
+    border-radius: 10px; 
+    text-align: center;
+    padding: 5px;
+    text-shadow: rgba(0, 0, 0, 0.8);
+}
+
+.testimonios {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+}
+
+.carrusel {
+    grid-area: carrusel;
+}
+
+
+ul.slider {
+    position: relative;
+    width: auto;
+    height: 100px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #f7eade;
+    transition: opacity .5s;
+    text-align: center;
+    place-items: center;
+    padding-top: 20px;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu-testimonios {
+    text-align: center;
+}
+
+.menu-testimonios li {
+    display: inline-block;
+    text-align: center;
+} 
+
+.menu-testimonios li a {
+    margin-top: 40px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #343f37;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 100%;
+}
+
+.masvendidos__tt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 45px;
+    color: #BCAA94;
+    font-family: 'Dancing Script', cursive;
+}
+
+.masvendidos__productos {
+    height: 100%;
+    width: auto;
+}
+
+.masvendidosimg {
+    height: 250px;
+    margin: 5px;
+    border: 7px solid #E9E9E9;
+    border-radius: 6px;
+}
+
+.masvendidos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.masvendidos__nombre {
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    color: #BCAA94;
+    text-align: center;
+    margin: 5px;
+}
+
+.masvendidos__precio {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+.masvendidos__boton {
+    background-color: #BCAA94;
+    color: #fffffa;
+    font-size: 17px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.Vertodos {
+    display: flex;
+    justify-content: center;
+}
+
+.vertodos__boton {
+    background-color: #BCAA94;
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;       
+}
+
+.vertodos__boton a {
+    text-decoration: none;
+    color: #fffffa;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.suscripcion {
+    background-color: #8ba188;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.productos__tt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 45px;
+    color: #BCAA94;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Productos1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Productos2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productos__img {
+    height: 250px;
+    width: 180px;
+    margin: 5px;
+    border: 7px solid #E9E9E9;
+    border-radius: 6px;
+}
+
+.productos__nombre1 {
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    color: #BCAA94;
+    text-align: center;
+    margin: 5px;
+}
+
+.productos__precio1 {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+.productos__boton1 {
+    background-color: #BCAA94;
+    color: #fffffa;
+    font-size: 17px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.productos__bt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "productos-pag"
+    "footer";
+    grid-template-rows: auto auto auto;
+}
+
+.productos-index {
+    grid-area: productos-index;
+}
+
+.suscripcion-index {
+    grid-area: suscripcion-index;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nosotros__tt {
+    justify-content: center;
+}
+
+
+
+@media (max-width: 870px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 862px) {
+    .menu  {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+
+
