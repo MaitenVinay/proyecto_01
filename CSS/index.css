@@ -107,6 +107,19 @@ header {
     padding: 16px;
 }
 
+.menu .menu__link:hover {
+    border: 2px solid #ddc9c9;
+    transform: border 2s;
+}
+
+div img:hover {
+    transform: scale(1.05);
+}
+
+div img {
+    transition: .6s;
+}
+
 .banner {
     opacity: 80%;
     height: auto;
