@@ -20,32 +20,60 @@
     />
   </head>
   <body class="grid-index">
-    <header class="header">
-      <a href="./index.html" alt="">
-        <img class="logo" src="./Logo/Logo.PNG" />
-      </a>
-      <nav class="menu">
-        <a class="menu__link" href="./index.html">Inicio</a>
-        <a class="menu__link" href="./Productos.html">Productos</a>
-        <a class="menu__link" href="./Recetas.html">Recetas</a>
-        <a class="menu__link" href="./Nosotros.html">Nosotros</a>
-        <a class="menu__link" href="./Contacto.html">Contacto</a>
-        <a class="menu__link" href="./Shop.html">Shop</a>
-      </nav>
+    <header>
+      <div class="logo">
+        <a href="./index.html" alt="">
+          <img class="logo-img" src="./Logo/Logo.PNG" />
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul class="menu-horizontal">
+            <li>
+              <a class="menu__link" href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="menu__link" href="./Productos.html">Productos</a>
+              <ul class="menu-vertical">
+                <li>
+                  <a class="menu__link-vertical" href="./Productos.html"
+                    >Tortas</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="./Productos2.html"
+                    >Pastelería</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="">Panadería</a>
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="">Mini Tortas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__link" href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a class="menu__link" href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="banner">
-      <div>
-        <picture class="banner__imagen">
-          <img
-            width="100%"
-            src="./Imagen inicio/cupcakes-de-chocolate_w1140.jpg"
-          />
-        </picture>
-        <!--<p class="banner__descuento">
+      <picture class="banner__imagen">
+        <img
+          width="100%"
+          src="./Imagen inicio/cupcakes-de-chocolate_w1140.jpg"
+        />
+      </picture>
+      <!--<p class="banner__descuento">
                 15% OFF
                 ABONANDO EN EFECTIVO
             </p>*/ -->
-      </div>
     </section>
     <section class="carrusel">
       <div class="testimonios">
@@ -154,7 +182,7 @@
         </button>
       </div>
     </section>
-    <section class="suscripcion-index">
+    <!-- <section class="suscripcion-index"> 
       <div class="suscripcion">
         <div class="suscripcion__texto">
           <p>Si queres recibir recetas y ofertas imperdibles... Suscribite!!</p>
@@ -166,55 +194,102 @@
           </form>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__informacion">
-        <div class="footer__info">
-          <h3>NAVEGACION</h3>
-          <ul class="footer__lista">
-            <li>
-              <a class="footer__link" href="./index.html">Inicio</a>
-            </li>
-            <li>
-              <a class="footer__link" href="./Productos.html">Productos</a>
-            </li>
-            <li>
-              <a class="footer__link" href="./Nosotros.html" target="_blank"
-                >Nosotros</a
-              >
-            </li>
-            <li>
-              <a class="footer__link" href="./Contacto.html" target="_blank"
-                >Contacto</a
-              >
-            </li>
-          </ul>
+    </section>-->
+    <footer>
+      <div class="footer__fondo">
+        <div class="footer__conteiner">
+          <div class="footer__informacion">
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Acerca de</h2>
+              <a class="footer__link" href="./Nosotros.html">
+                <h3 class="footer__formato">Nosotros</h3>
+              </a>
+              <a class="footer__link" href="./Contacto.html">
+                <h3 class="footer__formato">Contacto</h3>
+              </a>
+            </div>
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Secciones</h2>
+              <a class="footer__link" href="./index.html">
+                <h3 class="footer__formato">Inicio</h3>
+              </a>
+              <a class="footer__link" href="./Productos.html">
+                <h3 class="footer__formato">Productos</h3>
+              </a>
+            </div>
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Seguinos</h2>
+              <div>
+                <div class="footer__redes">
+                  <img src="./Iconos/fb.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/ig.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/tw.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Medios de Pago</h2>
+              <div>
+                <div class="footer__redes">
+                  <img src="./Iconos/visa.png" alt="" />
+                  <a class="footer__linkredes" href="">Visa</a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/master.png" alt="" />
+                  <a class="footer__linkredes" href="">Master Card</a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/amex.png" alt="" />
+                  <a class="footer__linkredes" href="">American Express</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3 class="footer__copyright">
+                Copyright © - 2022 - MaitenVinay - Todos los derechos reservados
+              </h3>
+            </div>
+          </div>
         </div>
-        <div class="footer__logo">
-          <img class="logo-footer" src="./Logo/Logo.JPG" alt="" />
-        </div>
-        <div class="footer__redessociales">
-          <p>Redes Sociales</p>
-          <a
-            class="footer__link"
-            href="https://es-la.facebook.com/"
-            target="_blank"
-            >Facebook</a
-          >
-          <a class="footer__link" href="https://www.google.com/" target="_blank"
-            >Google</a
-          >
-        </div>
-      </div>
-      <div class="footer__politica">
-        <div class="">
-          <p>AVISO Y POLITICA DE SEGURIDAD</p>
-        </div>
-        <div class="footer__mediodepago">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <div class="footer__fondo2">
+          <div class="footer_conteiner2">
+            <div class="footer__pie">
+              <a class="footer__link__pie1" href="">
+                <h3 class="footer__ttcc">Términos y condiciones</h3>
+              </a>
+              <p class="guion">-</p>
+              <a class="footer__link__pie2" href="">
+                <h3 class="footer__ttcc">Política de privacidad</h3>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

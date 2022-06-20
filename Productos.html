@@ -1,137 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-</head>
-<body class="grid-productos">
-    <header class="header">
-        <a href="./index.html" alt="">  <img class="logo" src="./Logo/Logo.PNG" /> </a>
-        <nav class="menu">
-            <a class="menu__link" href="./index.html">Inicio</a>
-            <a class="menu__link" href="./Productos.html">Productos</a>
-            <a class="menu__link" href="./Recetas.html">Recetas</a>
-            <a class="menu__link" href="./Nosotros.html">Nosotros</a>
-            <a class="menu__link" href="./Contacto.html">Contacto</a>
-            <a class="menu__link" href="./Shop.html">Shop</a>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grid-productos">
+    <header>
+      <div class="logo">
+        <a href="./index.html" alt="">
+          <img class="logo-img" src="./Logo/Logo.PNG" />
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul class="menu-horizontal">
+            <li>
+              <a class="menu__link" href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="menu__link" href="./Productos.html">Productos</a>
+              <ul class="menu-vertical">
+                <li>
+                  <a class="menu__link-vertical" href="./Productos.html"
+                    >Tortas</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="./Productos2.html"
+                    >Pastelería</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="">Panadería</a>
+                </li>
+                <li>
+                  <a class="menu__link-vertical" href="">Mini Tortas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__link" href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a class="menu__link" href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
     <section class="productos-pag">
-        <h3 class="productos__tt">Productos</h3>
-        <div class="Productos1">
-            <div class="productos-todos1">
-                <img class="productos__img" src="./Imagen inicio/lemon pie.jpg" />
-                <p class="productos__nombre1"> Lemon Pie</p>
-                <p class="productos__precio1">$2.450,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos1">
-                <img class="productos__img" src="./Productos/Tortas/Bizcochuelo de Chocolate.jpg" />
-                <p class="productos__nombre1">Bizcochuelo</p>
-                <p class="productos__precio1">$3.450,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos1">
-                <img class="productos__img" src="./Productos/Tortas/Torta blanco y negro.jpg" />
-                <p class="productos__nombre1">Torta ByN</p>
-                <p class="productos__precio1">$2.200,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos1">
-                <img class="productos__img" src="./Productos/Tortas/Torta Humeda.jpg" />
-                <p class="productos__nombre1">Torta Húmeda</p>
-                <p class="productos__precio1">$3.250,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
+      <h3 class="productos__tt">Productos</h3>
+      <div class="Productos1">
+        <div class="productos-todos1">
+          <img class="productos__img" src="./Imagen inicio/lemon pie.jpg" />
+          <p class="productos__nombre1">Lemon Pie</p>
+          <p class="productos__precio1">$2.450,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
         </div>
-        <div class="Productos2">
-            <div class="productos-todos2">
-                <img class="productos__img" src="./Productos/Tortas/Rogel.jpg" alt="">
-                <p class="productos__nombre1">Rogel</p>
-                <p class="productos__precio1">$2.310,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos2">
-                <img class="productos__img" src="./Productos/Tortas/Chesesecake.jpg" alt="">
-                <p class="productos__nombre1">Cheesecake</p>
-                <p class="productos__precio1">$2.750,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos2">
-                <img class="productos__img" src="./Productos/Tortas/Nuez con frutos rojos.jpg" alt="">
-                <p class="productos__nombre1">Nuez c/ Frutos</p>
-                <p class="productos__precio1">$3.810,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="productos-todos2">
-                <img class="productos__img" src="./Productos/Tortas/Number.jpg" alt="">
-                <p class="productos__nombre1">Number Cake</p>
-                <p class="productos__precio1">$2.750,00.-</p>
-                <div class="productos__bt">
-                    <button class="productos__boton1"> + Agregar al Carrito</button>
-                </div>
-            </div>
+        <div class="productos-todos1">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Bizcochuelo de Chocolate.jpg"
+          />
+          <p class="productos__nombre1">Bizcochuelo</p>
+          <p class="productos__precio1">$3.450,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
         </div>
+        <div class="productos-todos1">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Torta blanco y negro.jpg"
+          />
+          <p class="productos__nombre1">Torta ByN</p>
+          <p class="productos__precio1">$2.200,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+        <div class="productos-todos1">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Torta Humeda.jpg"
+          />
+          <p class="productos__nombre1">Torta Húmeda</p>
+          <p class="productos__precio1">$3.250,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="Productos2">
+        <div class="productos-todos2">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Rogel.jpg"
+            alt=""
+          />
+          <p class="productos__nombre1">Rogel</p>
+          <p class="productos__precio1">$2.310,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+        <div class="productos-todos2">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Chesesecake.jpg"
+            alt=""
+          />
+          <p class="productos__nombre1">Cheesecake</p>
+          <p class="productos__precio1">$2.750,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+        <div class="productos-todos2">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Nuez con frutos rojos.jpg"
+            alt=""
+          />
+          <p class="productos__nombre1">Nuez c/ Frutos</p>
+          <p class="productos__precio1">$3.810,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+        <div class="productos-todos2">
+          <img
+            class="productos__img"
+            src="./Productos/Tortas/Number.jpg"
+            alt=""
+          />
+          <p class="productos__nombre1">Number Cake</p>
+          <p class="productos__precio1">$2.750,00.-</p>
+          <div class="productos__bt">
+            <button class="productos__boton1">+ Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer class="footer">
-        <div class="footer__informacion">
-            <div class="footer__info">
-                <h3>NAVEGACION</h3>
-                <ul class="footer__lista">
-                    <li>
-                        <a class="footer__link" href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="./Productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="./Nosotros.html" target="_blank">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="./Contacto.html" target="_blank">Contacto</a>
-                    </li>                        
-                </ul>
+    <footer>
+      <div class="footer__fondo">
+        <div class="footer__conteiner">
+          <div class="footer__informacion">
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Acerca de</h2>
+              <a class="footer__link" href="./Nosotros.html">
+                <h3 class="footer__formato">Nosotros</h3>
+              </a>
+              <a class="footer__link" href="./Contacto.html">
+                <h3 class="footer__formato">Contacto</h3>
+              </a>
             </div>
-            <div class="footer__logo">
-                <img class="logo-footer" src="./Logo/Logo.JPG" alt="" />
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Secciones</h2>
+              <a class="footer__link" href="./index.html">
+                <h3 class="footer__formato">Inicio</h3>
+              </a>
+              <a class="footer__link" href="./Productos.html">
+                <h3 class="footer__formato">Productos</h3>
+              </a>
             </div>
-            <div class="footer__redessociales">
-                <p>Redes Sociales</p>
-                <a class="footer__link" href="https://es-la.facebook.com/" target="_blank">Facebook</a>
-                <a class="footer__link" href="https://www.google.com/" target="_blank">Google</a>
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Seguinos</h2>
+              <div>
+                <div class="footer__redes">
+                  <img src="./Iconos/fb.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/ig.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/tw.png" alt="" />
+                  <a
+                    class="footer__linkredes"
+                    href="https://es-la.facebook.com/"
+                    target="_blank"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
             </div>
+            <div class="footer__secciones">
+              <h2 class="footer__tt">Medios de Pago</h2>
+              <div>
+                <div class="footer__redes">
+                  <img src="./Iconos/visa.png" alt="" />
+                  <a class="footer__linkredes" href="">Visa</a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/master.png" alt="" />
+                  <a class="footer__linkredes" href="">Master Card</a>
+                </div>
+                <div class="footer__redes">
+                  <img src="./Iconos/amex.png" alt="" />
+                  <a class="footer__linkredes" href="">American Express</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3 class="footer__copyright">
+                Copyright © - 2022 - MaitenVinay - Todos los derechos reservados
+              </h3>
+            </div>
+          </div>
         </div>
-        <div class="footer__politica">
-            <div class="">
-                <p>AVISO Y POLITICA DE SEGURIDAD</p>
+        <div class="footer__fondo2">
+          <div class="footer_conteiner2">
+            <div class="footer__pie">
+              <a class="footer__link__pie1" href="">
+                <h3 class="footer__ttcc">Términos y condiciones</h3>
+              </a>
+              <p class="guion">-</p>
+              <a class="footer__link__pie2" href="">
+                <h3 class="footer__ttcc">Política de privacidad</h3>
+              </a>
             </div>
-            <div class="footer__mediodepago">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
