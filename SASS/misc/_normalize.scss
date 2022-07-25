@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.grid-index {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "banner"
+        "carrusel"
+        "productos-index"
+        "suscripcion-index"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+}

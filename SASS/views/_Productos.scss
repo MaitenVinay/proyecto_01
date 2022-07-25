@@ -1,0 +1,79 @@
+.productos__tt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 45px;
+    color: #BCAA94;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Productos1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Productos2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productos__img {
+    height: 250px;
+    width: 180px;
+    margin: 5px;
+    border: 7px solid #E9E9E9;
+    border-radius: 6px;
+}
+
+.productos__nombre1 {
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    color: #BCAA94;
+    text-align: center;
+    margin: 5px;
+}
+
+.productos__precio1 {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+.productos__boton1 {
+    background-color: #BCAA94;
+    color: #fffffa;
+    font-size: 17px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.productos__bt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "productos-pag"
+    "footer";
+    grid-template-rows: auto auto auto;
+}
+
+.productos-index {
+    grid-area: productos-index;
+}

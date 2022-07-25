@@ -1,4 +1,4 @@
-* {
+/** {
     padding: 0;
     margin: 0;
     font-weight: 500;
@@ -20,7 +20,7 @@ body {
         "suscripcion-index"
         "footer";
     grid-template-rows: auto auto auto auto auto auto;
-}
+}*/
 
 section {
     background-color: #fffffa;
@@ -30,7 +30,7 @@ section {
     margin: 50px;   
 }
 
-.footer__fondo {
+/*.footer__fondo {
     background-color: #333;
 }
 
@@ -137,13 +137,13 @@ section {
     letter-spacing: 0.5px;
     margin-left: 8px;
     padding: 3px;
-}
+}*/
 
 .suscripcion {
     padding: 60px;
 }
 
-header {
+/* header {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -159,15 +159,17 @@ header {
 }
 
 nav{
-	max-width: 900px;
+	max-width: auto;
 	margin: auto;
-	background-color: #f8f5f2;
+	background-color: #f8f5f2 !important;
 	font-size: 20px;
+    display: flex;
 }
 .menu-horizontal{
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+
 }
 .menu-horizontal > li > a{
 	display: block;
@@ -213,9 +215,9 @@ div img:hover {
 
 div img {
     transition: .6s;
-}
+} */
 
-.banner {
+/* .banner {
     height: auto;
     width: auto;
     grid-area: banner;
@@ -363,7 +365,7 @@ ul li {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+} */
 
 
 .suscripcion {
@@ -457,7 +459,7 @@ ul li {
     grid-area: suscripcion-index;
 }
 
-.nosotros__tt {
+/* .nosotros__tt {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -483,9 +485,9 @@ ul li {
 .nosotros__texto {
     margin: 10px 50px 10px 50px;
     padding-top: 10x;
-}
+} */
 
-.contacto__tt {
+/* .contacto__tt {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -555,7 +557,7 @@ ul li {
     border-radius: 4px;
     font-weight: 800;
     letter-spacing: 2px;
-}
+} */
 
 /*@media (max-width: 870px) {
     .logo {
